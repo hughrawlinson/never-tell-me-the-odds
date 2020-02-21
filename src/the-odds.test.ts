@@ -1,4 +1,4 @@
-import { odds } from './the-odds';
+import { odds, gcd } from './the-odds';
 
 describe('odds', () => {
   it('returns 1 in 1 for 100%', () => {
@@ -13,5 +13,11 @@ describe('odds', () => {
       numerator: 1,
       denominator: 2
     });
+  });
+});
+
+describe('gcd', () => {
+  it('returns 2 for 4 and 8', () => {
+    expect(gcd(15, 20)).toEqual(5);
   });
 });
