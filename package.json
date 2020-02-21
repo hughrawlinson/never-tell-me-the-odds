@@ -1,10 +1,12 @@
 {
   "name": "never-tell-me-the-odds",
-  "description": "@@CHANGE THIS@@",
-  "author": "@@CHANGE THIS@@",
-  "repository": "@@CHANGE THIS@@",
+  "description": "Convert percentages into fractions",
+  "author": "Hugh Rawlinson <hughr2005+github@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "github:hughrawlinson/never-tell-me-the-odds"
+  },
   "version": "1.0.0",
-  "private": true,
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "types",
