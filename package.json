@@ -10,6 +10,7 @@
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "types",
+  "license": "ISC",
   "scripts": {
     "lint": "web-scripts lint",
     "test": "web-scripts test",

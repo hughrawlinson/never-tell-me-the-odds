@@ -4,8 +4,9 @@ type Odds = {
 }
 
 export function odds(percentage: number): Odds {
+  console.log(percentage);
   return {
-    numerator: percentage,
-    denominator: 100
+    numerator: 1,
+    denominator: 1
   };
 }
