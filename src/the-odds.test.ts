@@ -1,4 +1,4 @@
-import { odds, pollardsRhoAlgo, gcd } from './the-odds';
+import { odds, gcd } from './the-odds';
 
 describe('odds', () => {
   it('returns 1 in 1 for 100%', () => {
@@ -13,12 +13,6 @@ describe('odds', () => {
       numerator: 1,
       denominator: 2
     });
-  });
-});
-
-describe('Pollard\'s Rho Algorithm', () => {
-  it('is callable', () => {
-    expect(pollardsRhoAlgo(50)).toEqual(2);
   });
 });
 
