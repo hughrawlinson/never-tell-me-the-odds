@@ -16,8 +16,10 @@ export function gcd(x: number, y: number) {
 }
 
 export function odds(percentage: number): Odds {
+  const greatestCommonDivisor = gcd(percentage, 100);
+
   return {
-    numerator: 1,
+    numerator: percentage / greatestCommonDivisor,
     denominator: 100 / gcd(percentage, 100)
   };
 }

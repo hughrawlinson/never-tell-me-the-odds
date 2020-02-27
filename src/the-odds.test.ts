@@ -21,6 +21,13 @@ describe('odds', () => {
       denominator: 5
     })
   });
+
+  it('returns 3 in 8 for 37.5%', () => {
+    expect(odds(37.5)).toEqual({
+      numerator: 3,
+      denominator: 8
+    });
+  })
 });
 
 describe('gcd', () => {
