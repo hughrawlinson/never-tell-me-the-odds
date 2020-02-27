@@ -8,7 +8,7 @@ describe('odds', () => {
     });
   });
 
-  it.skip('returns 1 in 2 for 50%', () => {
+  it('returns 1 in 2 for 50%', () => {
     expect(odds(50)).toEqual({
       numerator: 1,
       denominator: 2

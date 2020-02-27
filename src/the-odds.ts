@@ -16,9 +16,8 @@ export function gcd(x: number, y: number) {
 }
 
 export function odds(percentage: number): Odds {
-  console.log(percentage);
   return {
     numerator: 1,
-    denominator: 1
+    denominator: 100 / gcd(percentage, 100)
   };
 }
