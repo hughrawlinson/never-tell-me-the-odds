@@ -35,6 +35,13 @@ describe('odds', () => {
       denominator: 1000,
     });
   });
+
+  it('handles a fraction that is indivisible by two in the denominator', () => {
+    expect(odds(44.4)).toEqual({
+      numerator: 4,
+      denominator: 11,
+    });
+  });
 });
 
 describe('gcd', () => {
