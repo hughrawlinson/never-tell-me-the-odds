@@ -1,16 +1,20 @@
-# web-scripts-template
+# never-tell-me-the-odds
 
-A [GitHub Template Repository](https://help.github.com/en/articles/creating-a-repository-from-a-template) to create an NPM library which uses [@spotify/web-scripts](https://github.com/spotify/web-scripts) for build, test, lint, auto-format, and release.
+_Don't use this!!_
+
+A micro library to return a ratio (the odds), e.g. 3720 to 1, or 1 in 6, given a percentage.
+
+It's deceptively tricky to code, to handle accuracy properly. Mostly it's an outlet for me to practice test driven development in my spare time. Please don't use this!
 
 ## Usage
 
-Click the green "Use this template" button to create a new library from this template.
+```js
+import theOdds from 'never-tell-me-the-odds';
 
-Once you have your project, run `yarn` to install the dependencies. Try out scripts such as `yarn build`, `yarn lint`, and `yarn test`.
+theOdds(20);
 
-## ONCE YOU HAVE CREATED YOUR REPO
-
-- [ ] replace every `@@CHANGE THIS@@` in package.json
-- [ ] remove `private: true` if you plan to publish the library to NPM
-- [ ] use `yarn commit` when committing to this repo (uses commitizen)
-- [ ] set a `license` in your package.json and create a `LICENSE` file
+// {
+//   "numerator": 1,
+//   "denominator" : 5
+// }
+```
