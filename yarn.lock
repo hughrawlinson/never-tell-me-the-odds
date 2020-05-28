@@ -746,10 +746,10 @@
     glob "^7.1.4"
     read-pkg-up "^7.0.1"
 
-"@spotify/web-scripts@^7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@spotify/web-scripts/-/web-scripts-7.0.1.tgz#9c7ce0e35db14f7e001813e1500ee70657cbfd7a"
-  integrity sha512-eGiQ9ePZur2L/GBj6yLlyHmP1mybO5pxFPNmkFYC+DL3l4uABjHYDhzRb5t5osug1ZZzfY24EzQKF1eMofRltg==
+"@spotify/web-scripts@^7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@spotify/web-scripts/-/web-scripts-7.0.2.tgz#2f45920b404b24cde1b181414ecfe404c297adea"
+  integrity sha512-4Hf8+dy8/b5s3hB1mzW79sa+B81K0zWLLhG/e+fxNtejU/sSPYz1nB1G9IjIDlHpf7SNsR53tcKevXei1OoVxg==
   dependencies:
     "@commitlint/cli" "^8.3.3"
     "@commitlint/config-conventional" "^8.3.3"
