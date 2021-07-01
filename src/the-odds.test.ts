@@ -28,6 +28,13 @@ describe('odds', () => {
       denominator: 8,
     });
   });
+
+  it('returns 1 in 1000 for 0.1%', () => {
+    expect(odds(0.1)).toEqual({
+      numerator: 1,
+      denominator: 1000,
+    });
+  });
 });
 
 describe('gcd', () => {
