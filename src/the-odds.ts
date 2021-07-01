@@ -1,13 +1,13 @@
 type Odds = {
   numerator: number;
   denominator: number;
-}
+};
 
 export function gcd(x: number, y: number) {
   let a = x;
   let b = y;
   let remainder;
-  while (b != 0) {
+  while (b !== 0) {
     remainder = a % b;
     a = b;
     b = remainder;
@@ -22,6 +22,6 @@ export function odds(percentage: number): Odds {
 
   return {
     numerator: percentage / greatestCommonDivisor,
-    denominator: precision / gcd(percentage, precision)
+    denominator: precision / gcd(percentage, precision),
   };
 }

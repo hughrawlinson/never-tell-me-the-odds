@@ -4,30 +4,30 @@ describe('odds', () => {
   it('returns 1 in 1 for 100%', () => {
     expect(odds(100)).toEqual({
       numerator: 1,
-      denominator: 1
+      denominator: 1,
     });
   });
 
   it('returns 1 in 2 for 50%', () => {
     expect(odds(50)).toEqual({
       numerator: 1,
-      denominator: 2
+      denominator: 2,
     });
   });
 
   it('returns 1 in 5 for 20%', () => {
     expect(odds(20)).toEqual({
       numerator: 1,
-      denominator: 5
-    })
+      denominator: 5,
+    });
   });
 
   it('returns 3 in 8 for 37.5%', () => {
     expect(odds(37.5)).toEqual({
       numerator: 3,
-      denominator: 8
+      denominator: 8,
     });
-  })
+  });
 });
 
 describe('gcd', () => {
