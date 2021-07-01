@@ -15,13 +15,21 @@ export function gcd(x: number, y: number) {
   return a;
 }
 
+function isRound(n: number) {
+  return Math.floor(n) === n;
+}
+
 export function odds(percentage: number): Odds {
-  const precision = 100;
+  const denominator = 1 / (percentage / 100);
 
-  const greatestCommonDivisor = gcd(percentage, precision);
+  for (let numerator = 1; numerator < 10000; numerator++) {
+    if (isRound(numerator * denominator)) {
+      return {
+        numerator,
+        denominator: numerator * denominator,
+      };
+    }
+  }
 
-  return {
-    numerator: percentage / greatestCommonDivisor,
-    denominator: precision / gcd(percentage, precision),
-  };
+  throw new Error('No odds found below 10000');
 }
