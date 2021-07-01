@@ -17,13 +17,7 @@
     "build": "web-scripts build",
     "commit": "web-scripts commit",
     "release": "web-scripts release",
-    "prepare": "web-scripts audit"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "web-scripts commitmsg",
-      "pre-commit": "web-scripts precommit"
-    }
+    "prepare": "husky install && web-scripts audit"
   },
   "devDependencies": {
     "@spotify/web-scripts": "^10.1.0",
