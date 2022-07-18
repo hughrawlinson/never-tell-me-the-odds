@@ -20,7 +20,7 @@
     "prepare": "husky install && web-scripts audit"
   },
   "devDependencies": {
-    "@spotify/web-scripts": "^14.0.1",
+    "@spotify/web-scripts": "^14.0.2",
     "husky": "^8.0.1"
   }
 }
